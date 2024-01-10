@@ -1,89 +1,24 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  header {
-    background-color: #eac6ed;
-    padding: 20px 40px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000; /* Asegura que la cabecera esté sobre otros elementos */
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 100px;
-  }
-  
-  .logo img {
-    max-width: 25%; /* Ajusta el tamaño máximo de tu logo */
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links.show {
-    display: flex;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 7px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-links li a:hover {
-    font-size: 20px;
-    background-color: whitesmoke;
-  }
-  
-  .toggle-btn {
-    display: none;
-    font-size: 20px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-  
-  /* Media Query para pantallas más pequeñas */
-  @media screen and (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .toggle-btn {
-      display: block;
-    }
-  
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-top: 10px;
-    }
-  
-    .nav-links.show {
-      display: flex;
-    }
-  
-    .nav-links li {
-      margin-bottom: 8px;
-    }
-  
-    .nav-links li a {
-      padding: 8px;
-    }
-  }
-  
+.navbar .container-fluid  .navbar-brand {
+  width: 5%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .container-fluid  .navbar-brand img{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .container-fluid .nav .nav-item .nav-link{
+  color: black;
+  font-family: 'champagne & limousines';
+  border-radius: 7px;
+  transition: 0.5s;
+}
+
+.navbar .container-fluid .nav .nav-item .nav-link:hover{
+  font-size: 20px;
+  padding: 10px 10px;
+  background-color: rgb(192, 192, 192);
+}
